@@ -11,7 +11,7 @@ It is protected by token-based authentication and deployed on a **Google Cloud P
 ## ✅ Endpoint
 
 ```
-GET http://34.145.178.111:5000/api/time?city=CityName
+[GET http://34.145.178.111:5000/api/time?city=CityName](http://34.145.178.111:5000/api/time?city=London)
 ```
 
 ---
@@ -21,7 +21,7 @@ GET http://34.145.178.111:5000/api/time?city=CityName
 You **must** include a Bearer token in the request headers:
 
 ```
-Authorization: Bearer supersecrettoken123
+Authorization: supersecrettoken123
 ```
 
 If the token is missing or incorrect, the API will respond with:
@@ -38,7 +38,8 @@ If the token is missing or incorrect, the API will respond with:
 
 ```bash
 curl -H "Authorization: Bearer supersecrettoken123" \
-"http://34.145.178.111:5000/api/time?city=London"
+"http://34.145.178.111:5000/api/time?city=Tokyo"
+
 ```
 
 ---
